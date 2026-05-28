@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- ROOT ---------- */
+
+:root {
+  --gold: #D4AF37;
+  --dark: #0a0a0a;
+}
+
+/* ---------- GLOBAL ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    linear-gradient(
+      rgba(10,10,10,0.88),
+      rgba(10,10,10,0.94)
+    ),
+    url('/anime-collage.webp');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: white;
+  overflow-x: hidden;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ---------- GLASS EFFECT ---------- */
+
+.glass {
+  background: rgba(255,255,255,0.05);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.35),
+    inset 0 1px 1px rgba(255,255,255,0.05);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.bg-gold {
+  background: var(--gold);
+}
